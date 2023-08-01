@@ -16,3 +16,41 @@ img {
   display: block;
   max-width: 100%;
 }
+
+input {
+  padding: 10px;
+  margin-bottom: 24px;
+  width: 310px;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  min-width: 150px;
+  padding: 8px;
+  color: white;
+  background-color: #366854;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.value {
+  display: block;
+  font-size: 56px;
+}
+
+.label {
+  font-size: 35px;
+}
+
+/* Padding (to add inner spacing)
+Margin (to add a margin around the input field)
+Border
+Box shadow
+Border radius
+Width
+Font */

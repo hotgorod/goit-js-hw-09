@@ -29,7 +29,6 @@ const options = {
         }
         select = selectedDatesMs- currentDateMs;
         startButton.removeAttribute('disabled');
-        console.log(select)
         return select
     },
 };
@@ -39,8 +38,7 @@ flatpickr(input, options);
 startButton.addEventListener('click', onButtonClick)
 
 function onButtonClick() {
-    startButton.disabled = true;
-     
+        startButton.disabled = true;
         idTimerInterval = setInterval(() => {
         const selectedDateObject = convertMs(select)
         days.textContent = Object.values(selectedDateObject)[0].toString().padStart(2, 0)
@@ -53,14 +51,7 @@ function onButtonClick() {
             }
                         
         }, 1000)
-        
- 
-    
-    
     }
- 
-
-
 
 function convertMs(ms) {
   // Number of milliseconds per unit of time

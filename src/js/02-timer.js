@@ -38,28 +38,7 @@ const options = {
     },
 };
 
-flatpickr('#datetime-picker', {
-    enableTime: true,
-    time_24hr: true,
-    defaultDate: new Date(),
-    minuteIncrement: 1,
-    onClose(selectedDates) {
-        const selectedDatesMs = selectedDates[0].getTime();
-        const currentDateMs = new Date();
-        
-        if ((selectedDatesMs - currentDateMs) < 0) {
-            Report.warning(
-                'Warning',
-                '"Please choose a date in the future"',
-                'Okay',
-                );
-            return
-        }
-        select = selectedDatesMs- currentDateMs;
-        startButton.removeAttribute('disabled');
-        return select
-    },
-});
+flatpickr('#datetime-picker', {});
 
 startButton.addEventListener('click', onButtonClick)
 

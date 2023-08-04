@@ -30,7 +30,6 @@ const options = {
                 '"Please choose a date in the future"',
                 'Okay',
                 );
-            // window.alert("Please choose a date in the future")
             return
         }
         select = selectedDatesMs- currentDateMs;

@@ -38,12 +38,8 @@ const options = {
     },
 };
 
-try {
-    flatpickr('#datetime-picker', options);
-}
-catch (e) { 
-    console.log(e);
-}
+flatpickr(input, options);
+
 
 
 startButton.addEventListener('click', onButtonClick)

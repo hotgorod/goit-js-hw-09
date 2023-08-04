@@ -3,7 +3,7 @@
 import { Report } from 'notiflix/build/notiflix-report-aio';
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
-const flatpickr = require("flatpickr");
+
 const input = document.querySelector('#datetime-picker');
 const startButton = document.querySelector('.js-start');
 const days = document.querySelector('[data-days]');

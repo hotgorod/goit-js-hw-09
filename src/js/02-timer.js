@@ -1,5 +1,6 @@
 
 const flatpickr = require("flatpickr");
+import { Report } from 'notiflix/build/notiflix-report-aio';
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 
@@ -24,7 +25,12 @@ const options = {
         const currentDateMs = options.defaultDate.getTime();
         
         if ((selectedDatesMs - currentDateMs) < 0) {
-            window.alert("Please choose a date in the future")
+            Report.warning(
+                'Warning',
+                '"Please choose a date in the future"',
+                'Okay',
+                );
+            // window.alert("Please choose a date in the future")
             return
         }
         select = selectedDatesMs- currentDateMs;

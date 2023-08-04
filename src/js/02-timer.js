@@ -37,7 +37,6 @@ const options = {
         return select
     },
 };
-
 flatpickr(input, options);
 
 
